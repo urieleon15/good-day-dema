@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Menú comida — Good Day Dema</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header: copiar mismo nav en todas las páginas -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="logo">
+            <img src="imgs/good day dema.png" alt="logo good day" width="120">
+        </div>
+        <div>
+          <h1>Good Day Dema</h1>
+          <!-- pequeño subtítulo -->
+          <div style="font-size:12px;color:var(--muted)">it's a good day!</div>
+        </div>
+      </div>
+
+      <nav class="nav" aria-label="Navegación principal">
+        <a href="index.html">Inicio</a>
+        <a href="menu-comida.html" class="active">Menú comida</a>
+        <a href="platos-principales.html">Platos principales</a>
+        <a href="bebidas.html">Bebidas</a>
+        <a href="postres.html">Postres</a>
+        <a href="paquetes.html">Paquetes</a>
+        <a href="galeria.html">Galería</a>
+        <a href="promociones.html">Promociones</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- título / filtro simple (sin JS) -->
+    <section style="margin-top:18px;">
+      <div class="section-title">Menú comida</div>
+      <div style="color:var(--muted); margin-bottom:8px;">Selecciona por categoría: Entradas, Sopas, Ensaladas, etc. </div>
+
+      <!-- listado de productos: usa la clase .cards para grid -->
+      <div class="cards">
+        <!-- tarjeta repetible -->
+        <article class="card">
+          <img src="imgs/brushetta.jpg" alt="Entrada 1">
+          <div style="font-weight:800;">Bruschetta Clancy</div>
+          <div style="font-size:13px; color:var(--muted);">Pan tostado con tomate, albahaca y aceite de oliva.</div>
+          <div class="item-meta">
+            <div class="sizes">ch $59 · med $79 · gd $99</div>
+            <div class="price">$79</div>
+          </div>
+        </article>
+
+
+        <article class="card">
+          <img src="imgs/fideo.jpg" alt="Sopa 1">
+          <div style="font-weight:800;">Fideo Bourbaki</div>
+          <div style="font-size:13px; color:var(--muted);">Preparada con ingredientes de temporada.</div>
+          <div class="item-meta">
+            <div class="sizes">med $69 · gd $89</div>
+            <div class="price">$69</div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="imgs/ensalada-templada-lista-para-comer.jpg" alt="Ensalada 1">
+          <div style="font-weight:800;">Ensalada Bishop</div>
+          <div style="font-size:13px; color:var(--muted);">Vegetales mixtos, queso de cabra y vinagreta.</div>
+          <div class="item-meta">
+            <div class="sizes">ch $79 · med $99 · gd $129</div>
+            <div class="price">$99</div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="imgs/burrito.jpg" alt="Entrada 1">
+          <div style="font-weight:800;">Levitate Burrito</div>
+          <div style="font-size:13px; color:var(--muted);">Burrito ligero, relleno de frijoles refritos, queso derretido y carnel al grill.</div>
+          <div class="item-meta">
+            <div class="sizes">ch $59 · med $79 · gd $99</div>
+            <div class="price">$79</div>
+          </div>
+        </article>
+        
+        <article class="card">
+          <img src="imgs/corte.jpg" alt="Entrada 1">
+          <div style="font-weight:800;">JumpSteak</div>
+          <div style="font-size:13px; color:var(--muted);">Corte asado al carbón, jugoso, servido con salsa cremosa en tonos amarillos.</div>
+          <div class="item-meta">
+            <div class="sizes">ch $70 · med $110 · gd $199</div>
+            <div class="price">$110</div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="imgs/PIZZA-SUPREMA.png" alt="Entrada 1">
+          <div style="font-weight:800;">Polarize Pizza</div>
+          <div style="font-size:13px; color:var(--muted);">Pizza de peperoni tradicional con champiñones y carne al pastor.</div>
+          <div class="item-meta">
+            <div class="sizes">ch $79 · med $99 · gd $129</div>
+            <div class="price">$99</div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="imgs/houseofgold.jpg" alt="Entrada 1">
+          <div style="font-weight:800;">House Of Gold</div>
+          <div style="font-size:13px; color:var(--muted);">Pasta cremosa con queso dorado y pan crujiente. Al puro sabor de casa!</div>
+          <div class="item-meta">
+            <div class="sizes">ch $80 · med $150 ·</div>
+            <div class="price">$150</div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="imgs/arroz.jpg" alt="Entrada 1">
+          <div style="font-weight:800;">Trash The Especial</div>
+          <div style="font-size:13px; color:var(--muted);">Arroz frito con verduras, pollo y salsa teriyaki oscura.</div>
+          <div class="item-meta">
+            <div class="sizes">ch $59 · med $79 · gd $99</div>
+            <div class="price">$99</div>
+          </div>
+        </article>
+
+        <!-- agrega más items siguiendo este patrón -->
+      </div>
+    </section>
+
+    <!-- footer similar al index -->
+    <footer class="site-footer" style="margin-top:26px;">
+      <div class="footer-left">
+        <div><strong>Alumno:</strong> Uriel León</div>
+        <div><strong>Materia:</strong> Programación Web</div>
+      </div>
+      <div class="footer-right">
+        <div>Menú — Good Day Dema</div>
+      </div>
+    </footer>
+  </main>
+</body>
+</html>

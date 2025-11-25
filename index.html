@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Inicio — Restaurante Escala</title>
+  <!-- linkeamos al css (es uno como base) -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- HEADER: navegación principal -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="logo">
+            <img src="imgs/good day dema.png" alt="logo good day" width="120">
+        </div>
+        <div>
+          <h1>Good Day Dema</h1>
+          <!-- pequeño subtítulo -->
+          <div style="font-size:12px;color:var(--muted)">it's a good day!</div>
+        </div>
+      </div>
+
+      <nav class="nav" aria-label="Navegación principal">
+        <!-- marcar active en la página actual -->
+        <a href="index.html" class="active">Inicio</a>
+        <a href="menu-comida.html">Menú comida</a>
+        <a href="platos-principales.html">Platos principales</a>
+        <a href="bebidas.html">Bebidas</a>
+        <a href="postres.html">Postres</a>
+        <a href="paquetes.html">Paquetes</a>
+        <a href="galeria.html">Galería</a>
+        <a href="promociones.html">Promociones</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- CONTENIDO -->
+  <main class="container">
+    <!-- HERO / presentación breve -->
+    <section class="hero">
+      <div class="hero-card">
+        <div class="kicker">Bienvenidos</div>
+        <h2 class="section-title">Disfruta de la experiencia!</h2>
+        <p style="color:var(--muted); line-height:1.5;">
+          Aquí puedes explorar nuestras secciones: platos, bebidas, postres y paquetes especiales.
+          No olvides pasar un buen rato y recuerda: Tu mente está llena. Tu plato debería estarlo también.
+        </p>
+
+        <div class="cta">
+          <a class="btn btn-primary" href="menu-comida.html">Ver menú completo</a>
+          <a class="btn btn-outline" href="promociones.html">Promociones</a>
+        </div>
+      </div>
+
+      <!-- tarjeta con horario y dirección (ejemplo) -->
+      <aside class="hero-card">
+        <div style="font-weight:700; margin-bottom:8px;">Donde estámos?</div>
+        <div style="font-size:14px; color:var(--muted); line-height:1.4;">
+          Dirección: Calle Ing. Roberto Gayol 121, Ciudad de México.<br>
+          Horario: Lun–Dom 10:00–22:00<br>
+          Tel: 5511223344
+        </div>
+      </aside>
+    </section>
+
+    <!-- Destacados: mini-cards -->
+    <section style="margin-top:18px;">
+      <div class="section-title">Platos destacados</div>
+      <div class="cards">
+        <!-- ejemplo de tarjeta de plato -->
+        <article class="card">
+          <img src="imgs/Ensalada_alegre.jpg" alt="Platillo destacado 1">
+          <div style="font-weight:800;">Ensalada Torchbearer</div>
+          <div class="item-meta">
+            <div class="sizes">ch/med/gd</div>
+            <div class="price">$99 / $129 / $159</div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="imgs/pasta.jpeg" alt="Platillo destacado 2">
+          <div style="font-weight:800;">Pasta Bayou</div>
+          <div class="item-meta">
+            <div class="sizes">med / gd</div>
+            <div class="price">$129 / $169</div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="imgs/taco.jpg" alt="Platillo destacado 3">
+          <div style="font-weight:800;">Taco Bishop</div>
+          <div class="item-meta">
+            <div class="sizes">unidad</div>
+            <div class="price">$39</div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- pequeños bloques informativos -->
+    <section style="margin-top:24px; display:grid; grid-template-columns: 1fr 1fr; gap:12px;">
+      <div class="hero-card">
+        <div class="kicker">Calidad</div>
+        <h3 style="margin-top:6px;">Ingredientes locales y frescos</h3>
+        <p style="color:var(--muted);">Trabajamos con productores de la zona para ofrecer ingredientes frescos y de temporada.</p>
+      </div>
+
+      <div class="hero-card">
+        <div class="kicker">Experiencias</div>
+        <h3 style="margin-top:6px;">Eventos y reservas</h3>
+        <p style="color:var(--muted);">Ofrecemos espacios para eventos privados. Consulta disponibilidad en el restaurante.</p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-left">
+
+        <div><strong>Alumno:</strong> Uriel León</div>
+        <div><strong>Materia:</strong> Programación Web</div>
+
+      </div>
+
+      <div class="footer-right">
+        <div>Good Day Dema</div>
+        <div style="font-size:12px; color:var(--muted);">© 2025 FES ARAGÓN</div>
+      </div>
+    </footer>
+  </main>
+</body>
+</html>
